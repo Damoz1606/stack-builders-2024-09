@@ -1,3 +1,5 @@
+'use server'
+
 import { CheerioAPI } from "cheerio";
 
 export type HackerNewItem = {

@@ -1,3 +1,5 @@
+'use server'
+
 import { CheerioAPI, load } from "cheerio";
 
 export async function crawl<T>(url: string, cb: ($: CheerioAPI) => Promise<T>): Promise<T> {
@@ -7,7 +9,7 @@ export async function crawl<T>(url: string, cb: ($: CheerioAPI) => Promise<T>): 
             const reason = await data.json();
             throw new Error(reason);
         }
-        
+
         const html: string = await data.text();
         const api = load(html);
         return cb(api);
