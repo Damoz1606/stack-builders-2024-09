@@ -2,7 +2,7 @@
 
 import { CheerioAPI, load } from "cheerio";
 
-export async function crawl<T>(url: string, cb: ($: CheerioAPI) => Promise<T>): Promise<T> {
+export async function crawl<T>(url: string, cb: ($: CheerioAPI) => T): Promise<T> {
     try {
         const data: Response = await fetch(url);
         if (!data.ok) {
