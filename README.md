@@ -4,11 +4,16 @@ This is a [Next.js](https://nextjs.org/) project.
 
 ## Local Installation
 
-Clone this repository, and run de following commands:
+Clone this repository, install its dependencies, and run commands:
 
 ```bash
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
 After that open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
