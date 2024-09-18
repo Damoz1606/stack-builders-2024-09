@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Web Crawler Exercise
 
-## Getting Started
+This is a [Next.js](https://nextjs.org/) project.
 
-First, run the development server:
+## Local Installation
+
+Clone this repository, and run de following commands:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After that open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Web Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [https://stack-builders-2024-09.vercel.app/](https://stack-builders-2024-09.vercel.app/) in your browser to see the result on the web.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) or [https://stack-builders-2024-09.vercel.app/](https://stack-builders-2024-09.vercel.app/) in your browser. This will display a screen that will load data from the API. The application has two buttons:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- First option
+- Second option
 
-## Deploy on Vercel
+Each button has display the given statement.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## External libraries
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Shadcn
+
+Used for the UI to create an attractive and simple frontend
+
+### cheerios
+
+Used for crawing the web of [https://news.ycombinator.com/news](https://news.ycombinator.com/news).
