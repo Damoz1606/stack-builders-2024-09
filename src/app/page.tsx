@@ -36,7 +36,7 @@ export default async function Home({ searchParams }: HomeProps) {
           <div>
             {values.map(e => (
               <div className="flex flex-col gap-2" key={e.title}>
-                <div className="rounded-sm hover:bg-slate-100/10 p-2 transition ease-in-out delay-75">
+                <div className="rounded-sm hover:bg-slate-200/40 dark:hover:bg-slate-100/10 p-2 transition ease-in-out delay-75">
                   <h4 className="text-center text-md font-bold">{e.title}</h4>
                   <div className="flex flex-row justify-around text-xs">
                     <p><span>Rank</span>: {e.number}</p>
