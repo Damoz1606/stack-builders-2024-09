@@ -16,7 +16,6 @@ export const firstOption = async () => {
     return moreThanFiveWords;
 };
 
-
 export const secondOption = async () => {
     const items = await crawl<HackerNewItem[]>(endpoints.hackerNews, hackerNewsWebCrawlerCallback);
     const usefullItems = items.slice(0, 30);
