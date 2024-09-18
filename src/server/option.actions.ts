@@ -5,6 +5,10 @@ import { HackerNewItem, hackerNewsWebCrawlerCallback } from "@/lib/crawl.callbac
 import endpoints from "@/lib/endpoints";
 import { wordCounter } from "@/lib/word-counter";
 
+/**
+ * First statement given in the Stack Builder exercise: Filter all previous entries with more than five words in the title ordered by the number of comments first.
+ * @returns 
+ */
 export const firstOption = async () => {
     const items = await crawl<HackerNewItem[]>(endpoints.hackerNews, hackerNewsWebCrawlerCallback);
     const usefullItems = items.slice(0, 30);
@@ -16,6 +20,10 @@ export const firstOption = async () => {
     return moreThanFiveWords;
 };
 
+/**
+ * Second statement given in the Stack Builder exercise: Filter all previous entries with less than or equal to five words in the title ordered by points.
+ * @returns 
+ */
 export const secondOption = async () => {
     const items = await crawl<HackerNewItem[]>(endpoints.hackerNews, hackerNewsWebCrawlerCallback);
     const usefullItems = items.slice(0, 30);

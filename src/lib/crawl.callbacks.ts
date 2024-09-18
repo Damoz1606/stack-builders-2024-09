@@ -7,6 +7,11 @@ export type HackerNewItem = {
     comments: number;
 }
 
+/**
+ * Callback to perform operation for Hacker News
+ * @param $ 
+ * @returns 
+ */
 export function hackerNewsWebCrawlerCallback($: CheerioAPI): HackerNewItem[] {
     return $('.athing').toArray().map<HackerNewItem>((element) => {
         const title = $(element).find('.titleline a').text();
